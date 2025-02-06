@@ -1,0 +1,1 @@
+for run in {1..100}; do for file in *.rar; do yes | unrar e -p$(cat README.txt | base64 -d) ${file} dir1/; cd dir1; done; done;
